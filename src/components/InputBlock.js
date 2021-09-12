@@ -72,14 +72,13 @@ const InputBlock = ({
         onBlur={handleCheckValid}
       />
       {required && hasErr && !value && <Alert>{errMessage[0]}</Alert>}
-      {isInValid && isInValid.[name] && <Alert>{errMessage[1]}</Alert>}
+      {isInValid && isInValid[name] && <Alert>{errMessage[1]}</Alert>}
     </QuestionBlock>
   );
 };
 
 const RadioBlock = ({
   question,
-  name,
   value,
   handleInputChange,
   required,
@@ -93,7 +92,7 @@ const RadioBlock = ({
         {required && <span> *</span>}
       </div>
       <label>
-        <input 
+        <input
           type="radio"
           name="entryType"
           value="bed"
@@ -101,7 +100,7 @@ const RadioBlock = ({
         />躺在床上用想像力實作
       </label>
       <label>
-        <input 
+        <input
           type="radio"
           name="entryType"
           value="floor"
