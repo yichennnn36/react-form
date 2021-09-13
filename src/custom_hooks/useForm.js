@@ -49,11 +49,11 @@ const useForm = () => {
 
     if (name === 'email' && value) {
       const emailBoolean = emailRule.test(value) ? false : true;
-      return setIsInValid({ ...isInValid, email: emailBoolean })
+      return setIsInValid({ ...isInValid, email: emailBoolean });
     }
     if (name === 'phone' && value) {
       const phoneBoolean = phoneRule.test(value) ? false : true;
-      return setIsInValid({ ...isInValid, phone: phoneBoolean })
+      return setIsInValid({ ...isInValid, phone: phoneBoolean });
     }
   }
 
